@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="/stylesheets/form.css" />
+  </head>
+  <body>
+    <form action="/users/new" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="bio">Bio:</label>
+      <textarea id="bio" name="bio" rows="4"></textarea>
+
+      <label for="hobbies">Hobbies:</label>
+      <input type="text" id="hobbies" name="hobbies" />
+
+      <button type="submit">Add user</button>
+    </form>
+  </body>
+</html>
